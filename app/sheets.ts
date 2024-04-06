@@ -18,6 +18,7 @@ import NestedSheet from "./examples/nested";
 import RouterSheet from "./examples/router";
 import DrawUnderStatusBar from "./examples/draw-under-statusbar";
 import ReturnData from "./examples/return-data";
+import { DialogBox } from "./examples/dialog-box";
 
 // Register your Sheet component.
 /**
@@ -38,6 +39,7 @@ registerSheet("scrollview-resize", ResizeSheet);
 registerSheet("nested-sheets", NestedSheet);
 registerSheet("sheet-router", RouterSheet);
 registerSheet("draw-under-statusbar", DrawUnderStatusBar);
+registerSheet("dialog-box", DialogBox);
 registerSheet("return-data", ReturnData);
 
 /**
@@ -74,6 +76,7 @@ declare module "react-native-actions-sheet" {
         }>;
         "nested-sheets": SheetDefinition;
         "draw-under-statusbar": SheetDefinition;
+        "dialog-box": SheetDefinition;
         "return-data": SheetDefinition<{
             returnValue: boolean;
         }>;
