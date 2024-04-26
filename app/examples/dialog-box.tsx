@@ -11,7 +11,9 @@ export function DialogBox() {
                 width: 150,
             }}
             animated={false}
+            gestureEnabled={false}
             isModal={false}
+            elevation={0}
             containerStyle={{
                 height: "100%",
                 width: "100%",
